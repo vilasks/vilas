@@ -12,6 +12,7 @@ align-content: ${props => props.alignContent};
 align-items: ${props => props.alignItems};
 gap: ${props => props.gap};
 box-shadow: ${props => props.boxShadow};
+flex-grow: ${props => props.flexgrow};
 @media only screen and (max-width: ${breakpoints.md}){
     flex-wrap: wrap;
     padding: ${props => props.padding};

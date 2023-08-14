@@ -13,6 +13,8 @@ const LinkHolder = styled(DIV)`
 cursor: pointer;
 `
 
+
+
 function Navbar({changeTheme}){
 
     const theme = useTheme()
@@ -34,9 +36,9 @@ function Navbar({changeTheme}){
     }
 
     return(
-        <DIV display='flex' justifyContent='space-between' alignContent='center'>
+        <DIV display='flex' justifyContent='space-around' alignContent='center'>
             <LOGO>Vilas.</LOGO>
-            <DIV display='flex' justifyContent="space-between" alignContent='center' alignItems="center" gap="30px">
+            <DIV display='flex' flexgrow="1" justifyContent="space-around" alignContent='center' alignItems="center">
                 <LinkHolder onClick={goToAbout}>About Me</LinkHolder>
                 <LinkHolder onClick={goToProjects}>Projects</LinkHolder>
                 <LinkHolder><a style={{textDecoration:'none', color: theme.color}} title="vilaskathera@gmail.com" href="mailto:vilaskathera@gmail.com">Contact Me</a></LinkHolder>
